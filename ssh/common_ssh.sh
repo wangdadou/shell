@@ -40,9 +40,9 @@ function connect_by_line(){
     if [ "${server_info_arr[4]}" == "key" ]
     then
         ssh -i "${server_info_arr[5]}" "${server_info_arr[2]}@${server_info_arr[3]}";
-    elif [ "${server_info_arr[4]}" = "password" ]
-    then
-        pw_login "${server_info_arr[2]}@${server_info_arr[3]}" "${server_info_arr[5]}";
+#    elif [ "${server_info_arr[4]}" = "password" ]
+#    then
+#        pw_login "${server_info_arr[2]}@${server_info_arr[3]}" "${server_info_arr[5]}";
     else
         ssh "${server_info_arr[2]}@${server_info_arr[3]}";
     fi
